@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="7dp"
+        android:layout_gravity="end"
+        android:src="@drawable/edit"/>
+
+    <ImageView
+        android:id="@+id/profilePic"
+        android:scaleType="centerCrop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/profile"/>
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Someone"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="someone@domain.com"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <TextView
+        android:id="@+id/profilePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91-XXXXXXXXXX"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+        android:layout_marginTop="20dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <TextView
+        android:id="@+id/profileAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <TextView
+        android:id="@+id/profilePincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <TextView
+        android:id="@+id/profileCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <TextView
+        android:id="@+id/profileDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+    <TextView
+        android:id="@+id/profileState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik"/>
+
+</LinearLayout>

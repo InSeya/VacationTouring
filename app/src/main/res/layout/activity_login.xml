@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".auth.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/emailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/search_bg"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:hint="E-mail here"
+            android:textColor="#62878F" />
+
+        <EditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/search_bg"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:hint="password here"
+            android:textColor="#62878F"
+            android:password="true"/>
+
+        <TextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:background="#FF4747"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New here? "
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:textColor="#272727"/>
+
+            <TextView
+                android:id="@+id/goToRegisterPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:onClick="goToRegisterPage"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click to admin login"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/roboto"
+            android:textSize="18sp"
+            android:onClick="goToAdminLogin"
+            android:textColor="#272727"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>

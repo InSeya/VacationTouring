@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".AddressActivity">
+
+    <EditText
+        android:id="@+id/addressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:paddingStart="16dp"
+        android:textColor="#62878F" />
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:hint="City"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:textColor="#62878F" />
+
+    <EditText
+        android:id="@+id/districtEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:hint="District"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:textColor="#62878F" />
+
+    <EditText
+        android:id="@+id/stateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:hint="State"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:textColor="#62878F" />
+
+    <EditText
+        android:id="@+id/pincodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:hint="Pincode"
+        android:inputType="number"
+        android:paddingStart="16dp"
+        android:textColor="#62878F" />
+
+    <Button
+        android:id="@+id/addAddressBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Add" />
+
+</LinearLayout>

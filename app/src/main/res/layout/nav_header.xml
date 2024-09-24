@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_marginStart="15dp"
+    android:layout_marginBottom="5dp">
+
+    <ImageView
+        android:id="@+id/header_profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/navHeaderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="Oliver Queen"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/navHeaderEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="greenarrow@starcity.com"
+        android:textColor="@color/black_overlay"/>
+</LinearLayout>

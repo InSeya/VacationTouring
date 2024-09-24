@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".admin.AdminLoginActivity">
+
+
+    <TextView
+        android:id="@+id/forgotPasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Admin Login"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/emailAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:hint="E-mail here"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:text="admin@gmail.com"
+        android:textColor="#62878F" />
+
+    <EditText
+        android:id="@+id/passwordAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:hint="password here"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:password="true"
+        android:text="admin123"
+        android:textColor="#62878F" />
+
+    <Button
+        android:id="@+id/loginAdminBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:background="#FF4747"
+        android:text="Login"
+        android:textAllCaps="false" />
+
+</LinearLayout>

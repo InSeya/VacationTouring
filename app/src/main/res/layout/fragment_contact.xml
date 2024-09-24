@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContactFragment"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tour Guide"
+        android:textSize="24sp"
+        android:fontFamily="@font/roboto_bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello."
+        android:textSize="54sp"
+        android:fontFamily="@font/baloo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="How may we help you?"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Have any queries or suggestions. Feel free to reach out to us?"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".1"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/nameContact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:hint="Name here"
+        android:textColor="#62878F" />
+
+    <EditText
+        android:id="@+id/emailContact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:hint="E-mail here"
+        android:textColor="#62878F" />
+
+    <EditText
+        android:id="@+id/messageContact"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/search_bg"
+        android:paddingStart="16dp"
+        android:paddingTop="16sp"
+        android:hint="Queries or suggestion here!"
+        android:textColor="#62878F"/>
+
+    <Button
+        android:id="@+id/submitFeedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:text="Submit"/>
+
+</LinearLayout>

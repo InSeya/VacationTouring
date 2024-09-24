@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".auth.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/like" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="25dp"/>
+
+        <EditText
+            android:id="@+id/nameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/search_bg"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            android:hint="Name here"
+            android:textColor="#62878F" />
+
+        <EditText
+            android:id="@+id/phoneRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/search_bg"
+            android:inputType="phone"
+            android:paddingStart="16dp"
+            android:hint="Phone here"
+            android:textColor="#62878F"/>
+
+        <EditText
+            android:id="@+id/emailRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/search_bg"
+            android:inputType="textEmailAddress"
+            android:paddingStart="16dp"
+            android:hint="E-mail here"
+            android:textColor="#62878F" />
+
+        <EditText
+            android:id="@+id/passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/search_bg"
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:hint="password here"
+            android:textColor="#62878F"
+            android:password="true"/>
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:background="#FF4747"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already member? "
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                android:textColor="#272727"/>
+
+            <TextView
+                android:id="@+id/goToLoginPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:onClick="goToLoginPage"
+                android:fontFamily="@font/roboto_bold"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
